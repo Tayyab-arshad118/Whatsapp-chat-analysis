@@ -59,7 +59,7 @@ if chat is not None:
         st.title("Daily Timeline")
         daily_df = helper.daily_timeline(selected_user, df)
         fig, ax = plt.subplots()
-        ax.plot(daily_df["time"], daily_df["message"], color="red")
+        ax.plot(daily_df["date"], daily_df["message"], color="red")
         plt.xticks(rotation="vertical")
         st.pyplot(fig)
 
