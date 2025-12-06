@@ -1,4 +1,3 @@
-from turtle import color
 import streamlit as st
 from sympy import rotations
 import preprocess
