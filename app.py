@@ -1,5 +1,4 @@
 import streamlit as st
-from sympy import rotations
 import preprocess
 import helper
 import matplotlib.pyplot as plt
