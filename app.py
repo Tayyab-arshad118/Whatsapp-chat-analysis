@@ -58,9 +58,9 @@ if chat is not None:
 
         # Daily Timeline
         st.title("Daily Timeline")
-        monthly_df = helper.monthly_timeline(selected_user, df)
+        daily_df = helper.daily_timeline(selected_user, df)
         fig, ax = plt.subplots()
-        ax.plot(monthly_df["time"], monthly_df["message"], color="red")
+        ax.plot(monthly_df["time"], daily_df["message"], color="red")
         plt.xticks(rotation="vertical")
         st.pyplot(fig)
 
